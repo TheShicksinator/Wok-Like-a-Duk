@@ -1,0 +1,63 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Open+Sans:300');
+
+body {
+  background: url('hoboken.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font: 13px/23px "Lato", Arial, sans-serif;
+  padding: 20px 0;
+}
+
+
+input {
+  outline: none;
+  display: block;
+  width: 70%;
+  border: 1px solid darken(white, 15%);
+  border: none;
+  border-radius: 3px;
+  background: #f7f6f5;
+  margin: 20px auto;
+  padding: 18px 15px;   
+}
+
+input[type="submit"] {
+  width: 35%;
+  color: white;
+  font-size: 15px;
+  border-radius: 5px;
+  background: linear-gradient(#af96d4, #9b88b9);
+  cursor: pointer;
+  padding: 13px 20px;
+}
+
+
+
+h1{
+    text-align:center;
+    color:#030303;
+    margin-top:20%;
+    font-family: 'Pacifico', cursive;
+    font-size: 60px;
+    text-shadow: 0px 4px 3px rgb(255, 255, 255),
+               0px 8px 13px rgb(255, 255, 255),
+               0px 18px 23px rgb(255, 255, 255);
+  }
+
+  p {
+      font-size: 20px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-style: inherit;
+      text-align-last: center;
+      font-weight: bold;
+  }
+
+  form {
+      font-size: 20px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-weight: bold;
+  }
+
+  ul {
+      font-size: 15px;
+  }

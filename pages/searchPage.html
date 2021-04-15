@@ -5,45 +5,56 @@ Search Page
 
 <!DOCTYPE html>
 <html>
-    
-    <head>
-        <title>WLD Search Tool</title>
-        <link href="" rel="stylesheet">     <!--Apply style sheets when they are created-->
-    </head>
-    
-    <body>
-        <h1>Recipe Search Tool</h1>
-        <p>Here you will be able to utilize the highly customizable search engine to filter the countless recipes on the internet's best culinary sites into a refined selection based on your preferential inputs. To perform a search, simply check at least one option for each of the below categories: Meal, Preparation Time, Price Range, and Type of Food. Once an option from each is selected, start the search and the results will be displayed within seconds!</p>
-        <form>      <!--Can definitely be detailed further, attempted to provide a baseline for us to work off of-->
-            <fieldset>      
-                <legend>Wok like a Duk Search Tool</legend>     
-                <legend>Meal</legend>
-                <input type="checkbox" name="meal" value="Breakfast">Breakfast<br>      
-                <input type="checkbox" name="meal" value="Lunch">Lunch<br>      
-                <input type="checkbox" name="meal" value="Dinner">Dinner<br>      
-                <br>  
-                <legend>Preparation Time</legend>      
-                <input type="checkbox" name="prepTime" value="Short">Short: 0 - 15 minutes<br>      
-                <input type="checkbox" name="prepTime" value="Medium">Medium: 15 - 60 minutes<br>      
-                <input type="checkbox" name="prepTime" value="Long">Long: 1 hour +<br>      
-                <br>
-                <legend>Price Range</legend>      
-                <input type="checkbox" name="priceRange" value="$">$<br>      
-                <input type="checkbox" name="priceRange" value="$$">$$<br>      
-                <input type="checkbox" name="priceRange" value="$$$">$$$<br>      
-                <br>
-                <legend>Type(s) of Food</legend>      
-                <input type="checkbox" name="foodType" value="African">African<br>      
-                <input type="checkbox" name="foodType" value="American">American<br>
-                <input type="checkbox" name="foodType" value="Asian">Asian<br>
-                <input type="checkbox" name="foodType" value="European">European<br>
-                <input type="checkbox" name="foodType" value="Hispanic">Hispanic<br>
-                <input type="checkbox" name="foodType" value="Indian">Indian<br>
-                <input type="checkbox" name="foodType" value="Middle Eastern">Middle Eastern<br>
-                <br>
-                <input type="submit" value="Search" />      
-            </fieldset>      
-        </form>
-    </body>
-    
+  <head>
+    <title>WLD Search Tool</title>
+    <link href="../styles/search.css" rel="stylesheet" />
+    <!--Apply style sheets when they are created-->
+  </head>
+
+  <body>
+    <h1>Recipe Search Tool</h1>
+    <p>
+      Here you will be able to utilize the highly customizable search engine to
+      filter the countless recipes on the internet's best culinary sites into a
+      refined selection based on your preferential inputs. To perform a search,
+      simply check at least one option for each of the below categories: Meal,
+      Preparation Time, Price Range, and Type of Food. Once an option from each
+      is selected, start the search and the results will be displayed within
+      seconds!
+    </p>
+    <form>
+      <!--Can definitely be detailed further, attempted to provide a baseline for us to work off of-->
+      <fieldset>
+        <legend>Wok like a Duk Search Tool</legend>
+        <legend>Meal</legend>
+        <input type="checkbox" name="meal" value="Breakfast" />Breakfast<br />
+        <input type="checkbox" name="meal" value="Lunch" />Lunch<br />
+        <input type="checkbox" name="meal" value="Dinner" />Dinner<br />
+        <br />
+        <legend>Preparation Time</legend>
+        <input type="checkbox" name="prepTime" value="Short" />Short: 0 - 15
+        minutes<br />
+        <input type="checkbox" name="prepTime" value="Medium" />Medium: 15 - 60
+        minutes<br />
+        <input type="checkbox" name="prepTime" value="Long" />Long: 1 hour +<br />
+        <br />
+        <legend>Price Range</legend>
+        <input type="checkbox" name="priceRange" value="$" />$<br />
+        <input type="checkbox" name="priceRange" value="$$" />$$<br />
+        <input type="checkbox" name="priceRange" value="$$$" />$$$<br />
+        <br />
+        <legend>Type(s) of Food</legend>
+        <input type="checkbox" name="foodType" value="African" />African<br />
+        <input type="checkbox" name="foodType" value="American" />American<br />
+        <input type="checkbox" name="foodType" value="Asian" />Asian<br />
+        <input type="checkbox" name="foodType" value="European" />European<br />
+        <input type="checkbox" name="foodType" value="Hispanic" />Hispanic<br />
+        <input type="checkbox" name="foodType" value="Indian" />Indian<br />
+        <input type="checkbox" name="foodType" value="Middle Eastern" />Middle
+        Eastern<br />
+        <br />
+        <input type="submit" value="Search" />
+      </fieldset>
+    </form>
+  </body>
 </html>

@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Open+Sans:300');
+
+
+* {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+
+
+h1 {
+  font-family: 'Pacifico', cursive;
+  font-weight: 400;
+  font-size: 3em;
+  text-align: center;
+}
+
+body {
+    background: #ede0d4;
+  }
