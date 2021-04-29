@@ -11,5 +11,10 @@ def getIngredientsTasty(site):
     for listItem in soup.find_all(class_="ingredient xs-mb1 xs-mt0"):
         # iterates through elements containing ingredients
         listing.append(listItem.text)
-    # print can be subbed for sending to whatever docs are needed. Join will put the list of items into line separated.
-    print('\n'.join(listing))
+    with open('ingredients.txt', 'w') as file:
+        for line in listing:
+            line.encode('utf-8')
+            file.write(line + "\n")
+    # TODO: Fix encoding of special characters
+
+    # print('\n'.join(listing))

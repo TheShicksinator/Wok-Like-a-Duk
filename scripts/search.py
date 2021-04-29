@@ -16,4 +16,7 @@ def getResultsTasty(searchTerms):
         for tag in element.find_all(class_='feed-item__title'):
             resultListing.append(tag.text)
     completeList = list(zip(resultListing, resultLinks))
+    with open('results.txt', 'w') as file:
+        for line in completeList:
+            file.write(line[0] + "," + line[1] + "\n")
     print(completeList)
