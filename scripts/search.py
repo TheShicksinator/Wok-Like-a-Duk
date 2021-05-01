@@ -19,4 +19,5 @@ def getResultsTasty(searchTerms):
     with open('results.txt', 'w') as file:
         for line in completeList:
             file.write(line[0] + "," + line[1] + "\n")
+    # TODO: fix encoding of special characters
     print(completeList)
