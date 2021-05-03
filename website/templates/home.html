@@ -1,15 +1,22 @@
-{% extends "base.html" %} {% block content %}
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content
+%}
 <h1 align="center">Search</h1>
-<div class="form-group">
-  <label for="search">Email Address</label>
-  <input
-    type="search"
-    class="form-control"
-    id="search"
-    name="search"
-    placeholder="Enter search"
-  />
-</div>
-<br />
-<button type="submit" class="btn btn-primary">Search</button>
-{% endblock %}
+<form method="POST">
+  <textarea name="search" id="search" class="form-control"></textarea>
+  <div align="center">
+    <button type="submit" class="btn btn-primary" id="search-button">
+      Enter Search
+    </button>
+  </div>
+</form>
+{% if siteTitles %}
+<h1 align="center">Results</h1>
+<ul class="list-group list-group-flush" id="search results">
+  {% for recipeName in siteTitles %}
+  <form method="POST">
+    <button class="list-group-item" id="{{recipeName}}">{{recipeName}}</button>
+    <!-- needs to make dynamic ID that can be used to pass relevant values from search to site view page.-->
+    <br />
+  </form>
+  {% endfor %} {% endif %} {% endblock %}
+</ul>
