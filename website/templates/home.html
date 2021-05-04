@@ -9,12 +9,12 @@
     </button>
   </div>
 </form>
-{% if siteTitles %}
+{% if siteButtons %}
 <h1 align="center">Results</h1>
 <ul class="list-group list-group-flush" id="search results">
-  {% for recipeName in siteTitles %}
+  {% for recipeName in siteButtons %}
   <form method="POST">
-    <button class="list-group-item" id="{{recipeName}}">{{recipeName}}</button>
+    {{recipeName}}
     <!-- needs to make dynamic ID that can be used to pass relevant values from search to site view page.-->
     <br />
   </form>
