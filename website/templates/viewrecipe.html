@@ -1,0 +1,15 @@
+{% extends "base.html" %} {% block title %}{{siteTitle}}{% endblock %} {% block
+content%}
+<h1 align="center">{{siteTitle}}</h1>
+<ul class="ingredients">
+  {% for ingredient in ingredients %}
+  <li class="ingredient">{{ ingredient}}</li>
+  {% endfor %}
+</ul>
+<ol class="instructions">
+  {% for item in instructions %}
+  <li class="item">{{ item }}</li>
+  {% endfor %}
+</ol>
+
+{% endblock %}

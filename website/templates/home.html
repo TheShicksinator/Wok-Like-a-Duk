@@ -12,11 +12,8 @@
 {% if siteButtons %}
 <h1 align="center">Results</h1>
 <ul class="list-group list-group-flush" id="search results">
-  {% for recipeName in siteButtons %}
-  <form method="POST">
-    {{recipeName}}
-    <!-- needs to make dynamic ID that can be used to pass relevant values from search to site view page.-->
-    <br />
-  </form>
-  {% endfor %} {% endif %} {% endblock %}
+  {% for recipeName in siteButtons %} {{recipeName | safe}} {% endfor %} {%
+  endif %}
 </ul>
+
+{% endblock %}
